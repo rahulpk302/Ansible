@@ -1,7 +1,7 @@
 ---
 - name: Connectivity Check
-  become: yes
   hosts: all
+  become: yes
   tasks:
     - name: ping server
       ansible.builtin.ping:
