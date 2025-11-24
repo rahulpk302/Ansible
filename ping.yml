@@ -4,4 +4,4 @@
   become: yes
   tasks:
     - name: ping server
-      ansible.builtin.ping:
+      shell: ping
