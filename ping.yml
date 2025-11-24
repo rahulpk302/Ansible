@@ -1,6 +1,7 @@
 ---
 - name: Connectivity Check
   hosts: all
+  become: yes
   tasks:
     - name: ping server
       shell: ping
